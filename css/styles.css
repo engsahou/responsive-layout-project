@@ -1,0 +1,370 @@
+
+
+/******************************
+General layout
+*******************************/
+*{
+  box-sizing: border-box;
+  font-family: 'Open Sans',   sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.student-name { 
+  font-weight: 900;
+  font-size: 1em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header,
+.minor-content, 
+.main-footer
+{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/**********************
+MAIN HEADER
+*************************/
+.main-header {
+  text-align: center;  
+}
+
+.main-nav ul a:hover {
+  color: #969290;
+}
+
+.main-footer li a:hover {
+  color: #969290;
+}
+
+.main-nav ul {
+  padding:0;
+}
+
+.main-nav ul li { 
+  margin: 5px auto;
+  background-color:white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 7px 0; 
+}
+
+#profile-image {  
+  width: 100%;  
+  padding: 2em 2em 1em;
+}
+
+header p {
+  color: #858483;
+  padding-bottom: 2em;
+}
+
+
+
+
+/*************************
+MAIN CONTENT
+**************************/
+.main-content {
+  background-color: #fff;
+  text-align: center;  
+}
+
+#portfolio-gallery {
+  padding:0;
+}
+
+.main-content h2 {
+  font-size: 14px;
+  color:#292929;
+  margin: 2em 0 5px;
+}
+
+.main-content p {
+  color: #4d4b4b;
+  padding: 0 1em;
+}
+
+#portfolio-header {
+  padding: 2em 0 ;
+  color: #000;
+}
+
+#calculator-paragraph {
+  padding-bottom: 4em;
+}
+
+.main-content img {
+  width: 100%;
+  padding: 0 1em;
+  margin: 2em 0 0;
+}
+
+
+/*************************
+minor content
+**************************/
+
+.minor-content {
+  text-align: center;
+ 
+}
+
+#contact-header {
+  margin: 3em 0; 
+  font-size: 14px
+}
+
+.minor-content,
+.minor-content a{
+  color: #4d4b4b; 
+}
+
+.minor-content p {
+  margin-bottom: 2em;
+}
+
+.minor-content span {
+  font-weight: 800;
+  padding-left: 0.5em;  
+  
+}
+
+#contact-info {
+  padding-bottom: 2em;
+  padding-left: 0;
+  word-break: break-all;
+  border-bottom:  0.5px #ebddda solid ;
+}
+ 
+#contact-info li {
+  width: 90%;
+  margin: 1em auto;
+}
+
+#email-info {
+  padding-left: 2em;
+}
+
+#contact-info a {
+  display: block; 
+}
+
+
+
+/*******************************
+  FOOTER
+*********************************/
+.main-footer {
+ 
+  width: 90%;
+  font-weight: 900;
+  font-size: 12px;
+  margin: 0.5em auto;
+}
+
+.main-footer ul {
+  padding:0;
+}
+
+#name-ref {
+  width: 30%;
+  display: inline-block;
+}
+
+#top-ref {
+  width: 68%;
+  display: inline-block;
+   text-align: right;
+   vertical-align: top;
+}
+
+
+.minor-nav {
+  display: none;
+}
+/************************************
+special state here we should make the minor-nav off
+**************************************/
+
+  
+
+
+/************************
+Tablet approach at 768px
+************************/
+@media(min-width: 320px) {
+  
+  body {
+    padding-top: 2em;
+  }
+  .main-nav ul li {
+    display: inline-block;
+    background-color: #fafafa;   
+    margin-left: 10px;
+  }
+   
+    #profile-image {
+    float: right;
+     width: 40%;  
+     padding: 1em 1em ;
+     margin-bottom: 1em;
+
+  }
+  .profile-paragraph {
+    width: 60%;
+    float: left;
+    margin: 0 0 1em 0;
+    padding: 1em 1em;
+  }
+  
+  .main-content {
+    clear: both;
+  }
+  
+  /*********************************************
+  main content-item
+  *********************************************/
+  .main-content {
+    padding-top: 1px;  
+  }
+  
+  #portfolio-header {
+    height: 40px;
+   
+  }
+  
+  .main-content-item {
+    width: 45%;      
+    margin: 1em auto; 
+    display: inline-block; 
+    vertical-align: text-top;
+  }
+  
+ /****************************
+  Contact
+  ****************************/
+  .phone {
+    padding-right: 3em;
+  }
+  
+  /************************************
+  Footer
+  **************************************/
+  .main-footer {
+    padding-top: 1px;
+  }
+  
+  .minor-nav {
+    display: none;
+  }
+  
+  #top-ref {
+   display: inline-block; 
+  }
+  
+  
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+/*desktop screen size*/
+
+@media(min-width: 768px) {
+  
+  .student-name {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  .main-nav {
+    display: inline-block;
+    width: 50%;
+    text-align: right; 
+  }
+  
+  /*******************************************
+  PORTFOLIO
+  *******************************************/
+  
+  
+  
+  .main-content {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-content-item {
+    width: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .main-content-item p {
+    padding: 0;
+  }
+  .main-content-item img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  
+/***************************
+ Minor Content ***************************/
+ 
+  .minor-content p {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*************************************
+  Footer
+  *************************************/
+  
+  #top-ref {
+    display: none;
+  }
+  
+  #name-top-list {
+   float: left;
+    width: 67%;
+  }
+  
+  .minor-nav {
+    text-align: right;
+    display: inline-block;
+    width: 33%;
+  }
+  
+.minor-nav li {
+    float: left;
+    display: inline-block;
+    width: 33.33%;
+    margin: auto;
+  }
+  
+}
+
+ 
